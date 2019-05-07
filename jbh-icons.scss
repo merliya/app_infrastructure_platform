@@ -1,0 +1,1184 @@
+@font-face {
+	font-family: "jbh-icons";
+	src: url('jbh-icons.eot');
+	src: url('jbh-icons.eot?#iefix') format('eot'),
+		url('jbh-icons.woff2') format('woff2'),
+		url('jbh-icons.woff') format('woff'),
+		url('jbh-icons.ttf') format('truetype'),
+		url('jbh-icons.svg#jbh-icons') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "jbh-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == Module_Accounts {
+		$char: "\E001";
+	}
+	@if $filename == Module_Admin {
+		$char: "\E002";
+	}
+	@if $filename == Module_Advisor {
+		$char: "\E003";
+	}
+	@if $filename == Module_Billing {
+		$char: "\E004";
+	}
+	@if $filename == Module_Locations {
+		$char: "\E005";
+	}
+	@if $filename == Module_Orders {
+		$char: "\E006";
+	}
+	@if $filename == Module_Payments {
+		$char: "\E007";
+	}
+	@if $filename == Module_Preferences {
+		$char: "\E008";
+	}
+	@if $filename == Module_Reports {
+		$char: "\E009";
+	}
+	@if $filename == Module_Routes {
+		$char: "\E00A";
+	}
+	@if $filename == Archive {
+		$char: "\E00B";
+	}
+	@if $filename == Arrow_Down {
+		$char: "\E00C";
+	}
+	@if $filename == Arrow_Up {
+		$char: "\E00D";
+	}
+	@if $filename == Bars_One {
+		$char: "\E00E";
+	}
+	@if $filename == Bars_Three {
+		$char: "\E00F";
+	}
+	@if $filename == Bars_Two {
+		$char: "\E010";
+	}
+	@if $filename == Bed {
+		$char: "\E011";
+	}
+	@if $filename == Briefcase {
+		$char: "\E012";
+	}
+	@if $filename == Calendar {
+		$char: "\E013";
+	}
+	@if $filename == Chat {
+		$char: "\E014";
+	}
+	@if $filename == Check {
+		$char: "\E015";
+	}
+	@if $filename == Chevron_Back {
+		$char: "\E016";
+	}
+	@if $filename == Chevron_Down {
+		$char: "\E017";
+	}
+	@if $filename == Chevron_Next {
+		$char: "\E018";
+	}
+	@if $filename == Chevron_Up {
+		$char: "\E019";
+	}
+	@if $filename == Circle {
+		$char: "\E01A";
+	}
+	@if $filename == Circle_Add_Solid {
+		$char: "\E01B";
+	}
+	@if $filename == Circle_Check {
+		$char: "\E01C";
+	}
+	@if $filename == Circle_Check_Solid {
+		$char: "\E01D";
+	}
+	@if $filename == Circle_Clickable {
+		$char: "\E01E";
+	}
+	@if $filename == Circle_Clock {
+		$char: "\E01F";
+	}
+	@if $filename == Circle_Clock_Snooze {
+		$char: "\E020";
+	}
+	@if $filename == Circle_Clock_Solid {
+		$char: "\E021";
+	}
+	@if $filename == Circle_Dollar {
+		$char: "\E022";
+	}
+	@if $filename == Circle_Dollar_Solid {
+		$char: "\E023";
+	}
+	@if $filename == Circle_Info {
+		$char: "\E024";
+	}
+	@if $filename == Circle_Info_Solid {
+		$char: "\E025";
+	}
+	@if $filename == Circle_NotAvailable {
+		$char: "\E026";
+	}
+	@if $filename == Circle_NotTracking {
+		$char: "\E027";
+	}
+	@if $filename == Circle_Question {
+		$char: "\E028";
+	}
+	@if $filename == Circle_Question_Solid {
+		$char: "\E029";
+	}
+	@if $filename == Circle_Rating_Happy {
+		$char: "\E02A";
+	}
+	@if $filename == Circle_Rating_Neutral {
+		$char: "\E02B";
+	}
+	@if $filename == Circle_Rating_Sad {
+		$char: "\E02C";
+	}
+	@if $filename == Circle_Remove_Solid {
+		$char: "\E02D";
+	}
+	@if $filename == Circle_Scroll {
+		$char: "\E02E";
+	}
+	@if $filename == Circle_Solid {
+		$char: "\E02F";
+	}
+	@if $filename == Circle_Trophy {
+		$char: "\E030";
+	}
+	@if $filename == Circle_Username {
+		$char: "\E031";
+	}
+	@if $filename == Circle_Warning {
+		$char: "\E032";
+	}
+	@if $filename == Circle_Warning_Solid {
+		$char: "\E033";
+	}
+	@if $filename == Circle_Wheel {
+		$char: "\E034";
+	}
+	@if $filename == Clipboard {
+		$char: "\E035";
+	}
+	@if $filename == Clipboard_Check {
+		$char: "\E036";
+	}
+	@if $filename == Contacts {
+		$char: "\E037";
+	}
+	@if $filename == Contact_Mail {
+		$char: "\E038";
+	}
+	@if $filename == Contact_Phone {
+		$char: "\E039";
+	}
+	@if $filename == Container {
+		$char: "\E03A";
+	}
+	@if $filename == Couch {
+		$char: "\E03B";
+	}
+	@if $filename == Couch_Material {
+		$char: "\E03C";
+	}
+	@if $filename == Crate {
+		$char: "\E03D";
+	}
+	@if $filename == Crate_Search {
+		$char: "\E03E";
+	}
+	@if $filename == CreditCard {
+		$char: "\E03F";
+	}
+	@if $filename == Device_Camera {
+		$char: "\E040";
+	}
+	@if $filename == Device_Laptop {
+		$char: "\E041";
+	}
+	@if $filename == Device_Monitor {
+		$char: "\E042";
+	}
+	@if $filename == Device_Smartphone {
+		$char: "\E043";
+	}
+	@if $filename == Device_TV {
+		$char: "\E044";
+	}
+	@if $filename == Diamond {
+		$char: "\E045";
+	}
+	@if $filename == Document {
+		$char: "\E046";
+	}
+	@if $filename == Documents {
+		$char: "\E047";
+	}
+	@if $filename == Documents_List {
+		$char: "\E048";
+	}
+	@if $filename == Documents_List_Check {
+		$char: "\E049";
+	}
+	@if $filename == Documents_Payments {
+		$char: "\E04A";
+	}
+	@if $filename == Document_CopyScan {
+		$char: "\E04B";
+	}
+	@if $filename == Document_CopyScan_Solid {
+		$char: "\E04C";
+	}
+	@if $filename == Document_List {
+		$char: "\E04D";
+	}
+	@if $filename == Document_List_Check {
+		$char: "\E04E";
+	}
+	@if $filename == Document_List_Info {
+		$char: "\E04F";
+	}
+	@if $filename == Download {
+		$char: "\E050";
+	}
+	@if $filename == Exercise {
+		$char: "\E051";
+	}
+	@if $filename == Eye {
+		$char: "\E052";
+	}
+	@if $filename == Filter_Solid {
+		$char: "\E053";
+	}
+	@if $filename == Flatbed {
+		$char: "\E054";
+	}
+	@if $filename == FreezeProtect {
+		$char: "\E055";
+	}
+	@if $filename == Gear {
+		$char: "\E056";
+	}
+	@if $filename == Hazmat {
+		$char: "\E057";
+	}
+	@if $filename == Heart {
+		$char: "\E058";
+	}
+	@if $filename == Heart_Solid {
+		$char: "\E059";
+	}
+	@if $filename == Hierarchy {
+		$char: "\E05A";
+	}
+	@if $filename == History {
+		$char: "\E05B";
+	}
+	@if $filename == Home {
+		$char: "\E05C";
+	}
+	@if $filename == Hourglass {
+		$char: "\E05D";
+	}
+	@if $filename == Info {
+		$char: "\E05E";
+	}
+	@if $filename == Layers {
+		$char: "\E05F";
+	}
+	@if $filename == Lightbulb {
+		$char: "\E060";
+	}
+	@if $filename == Lightbulb_Solid {
+		$char: "\E061";
+	}
+	@if $filename == List {
+		$char: "\E062";
+	}
+	@if $filename == Loading {
+		$char: "\E063";
+	}
+	@if $filename == Location {
+		$char: "\E064";
+	}
+	@if $filename == LTL {
+		$char: "\E065";
+	}
+	@if $filename == Machine {
+		$char: "\E066";
+	}
+	@if $filename == Machine_Service {
+		$char: "\E067";
+	}
+	@if $filename == Map {
+		$char: "\E068";
+	}
+	@if $filename == Marker_Diamond_Solid {
+		$char: "\E069";
+	}
+	@if $filename == Marker_Solid {
+		$char: "\E06A";
+	}
+	@if $filename == Math_Add {
+		$char: "\E06B";
+	}
+	@if $filename == Math_Subtract {
+		$char: "\E06C";
+	}
+	@if $filename == Megaphone {
+		$char: "\E06D";
+	}
+	@if $filename == Menu_AddListItem {
+		$char: "\E06E";
+	}
+	@if $filename == Menu_Card {
+		$char: "\E06F";
+	}
+	@if $filename == Menu_Close {
+		$char: "\E070";
+	}
+	@if $filename == Menu_Edit {
+		$char: "\E071";
+	}
+	@if $filename == Menu_Expand {
+		$char: "\E072";
+	}
+	@if $filename == Menu_Hamburger {
+		$char: "\E073";
+	}
+	@if $filename == Menu_Logout {
+		$char: "\E074";
+	}
+	@if $filename == Menu_Overflow {
+		$char: "\E075";
+	}
+	@if $filename == Menu_Reorder {
+		$char: "\E076";
+	}
+	@if $filename == Menu_Reply {
+		$char: "\E077";
+	}
+	@if $filename == Menu_Sort {
+		$char: "\E078";
+	}
+	@if $filename == Menu_Undo {
+		$char: "\E079";
+	}
+	@if $filename == Menu_Undock {
+		$char: "\E07A";
+	}
+	@if $filename == Menu_Waffle {
+		$char: "\E07B";
+	}
+	@if $filename == Message {
+		$char: "\E07C";
+	}
+	@if $filename == Money {
+		$char: "\E07D";
+	}
+	@if $filename == Navigation {
+		$char: "\E07E";
+	}
+	@if $filename == Note {
+		$char: "\E07F";
+	}
+	@if $filename == Notification {
+		$char: "\E080";
+	}
+	@if $filename == Padlock_Locked_Solid {
+		$char: "\E081";
+	}
+	@if $filename == Padlock_Unlocked_Solid {
+		$char: "\E082";
+	}
+	@if $filename == Paperclip {
+		$char: "\E083";
+	}
+	@if $filename == Parking {
+		$char: "\E084";
+	}
+	@if $filename == Parking_Overnight {
+		$char: "\E085";
+	}
+	@if $filename == Perks {
+		$char: "\E086";
+	}
+	@if $filename == Picture {
+		$char: "\E087";
+	}
+	@if $filename == Pin {
+		$char: "\E088";
+	}
+	@if $filename == Pin_Add {
+		$char: "\E089";
+	}
+	@if $filename == Placeholder {
+		$char: "\E08A";
+	}
+	@if $filename == Pushpin_Pinned {
+		$char: "\E08B";
+	}
+	@if $filename == Pushpin_UnPinned {
+		$char: "\E08C";
+	}
+	@if $filename == Question {
+		$char: "\E08D";
+	}
+	@if $filename == Refrigerated {
+		$char: "\E08E";
+	}
+	@if $filename == Restroom {
+		$char: "\E08F";
+	}
+	@if $filename == Road {
+		$char: "\E090";
+	}
+	@if $filename == Scan {
+		$char: "\E091";
+	}
+	@if $filename == Search {
+		$char: "\E092";
+	}
+	@if $filename == Social_Facebook {
+		$char: "\E093";
+	}
+	@if $filename == Social_Instagram {
+		$char: "\E094";
+	}
+	@if $filename == Social_LinkedIn {
+		$char: "\E095";
+	}
+	@if $filename == Social_Skype {
+		$char: "\E096";
+	}
+	@if $filename == Social_Twitter {
+		$char: "\E097";
+	}
+	@if $filename == Social_Youtube {
+		$char: "\E098";
+	}
+	@if $filename == Star {
+		$char: "\E099";
+	}
+	@if $filename == Star_Full {
+		$char: "\E09A";
+	}
+	@if $filename == Star_Half {
+		$char: "\E09B";
+	}
+	@if $filename == Tag {
+		$char: "\E09C";
+	}
+	@if $filename == Tag_Alert {
+		$char: "\E09D";
+	}
+	@if $filename == Tag_Half {
+		$char: "\E09E";
+	}
+	@if $filename == Tag_Solid {
+		$char: "\E09F";
+	}
+	@if $filename == Tanker {
+		$char: "\E0A0";
+	}
+	@if $filename == Thermometer {
+		$char: "\E0A1";
+	}
+	@if $filename == Thumb_Up {
+		$char: "\E0A2";
+	}
+	@if $filename == Tool {
+		$char: "\E0A3";
+	}
+	@if $filename == Trailer {
+		$char: "\E0A4";
+	}
+	@if $filename == Trailers {
+		$char: "\E0A5";
+	}
+	@if $filename == Trash {
+		$char: "\E0A6";
+	}
+	@if $filename == Truck {
+		$char: "\E0A7";
+	}
+	@if $filename == TWIC {
+		$char: "\E0A8";
+	}
+	@if $filename == Upload {
+		$char: "\E0A9";
+	}
+	@if $filename == User_Group {
+		$char: "\E0AA";
+	}
+	@if $filename == User_Group_Solid {
+		$char: "\E0AB";
+	}
+	@if $filename == User_Profile {
+		$char: "\E0AC";
+	}
+	@if $filename == User_Profile_Solid {
+		$char: "\E0AD";
+	}
+	@if $filename == Warning {
+		$char: "\E0AE";
+	}
+	@if $filename == Warning_Triangle {
+		$char: "\E0AF";
+	}
+	@if $filename == Warning_Triangle_Solid {
+		$char: "\E0B0";
+	}
+	@if $filename == Weather_Cloudy {
+		$char: "\E0B1";
+	}
+	@if $filename == Weather_PartlyCloudy {
+		$char: "\E0B2";
+	}
+	@if $filename == Weather_Rain {
+		$char: "\E0B3";
+	}
+	@if $filename == Weather_Snow {
+		$char: "\E0B4";
+	}
+	@if $filename == Weather_Sunny {
+		$char: "\E0B5";
+	}
+	@if $filename == Weather_Thunderstorms {
+		$char: "\E0B6";
+	}
+	@if $filename == Wide_Container {
+		$char: "\E0B7";
+	}
+	@if $filename == Wide_DryVan {
+		$char: "\E0B8";
+	}
+	@if $filename == Wide_Flatbed {
+		$char: "\E0B9";
+	}
+	@if $filename == Wide_LTL {
+		$char: "\E0BA";
+	}
+	@if $filename == Wide_Refrigerated {
+		$char: "\E0BB";
+	}
+	@if $filename == Wide_Tanker {
+		$char: "\E0BC";
+	}
+	@if $filename == Wide_Trailer {
+		$char: "\E0BD";
+	}
+	@if $filename == Wide_Trailers {
+		$char: "\E0BE";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-Module_Accounts {
+	@include icon(Module_Accounts);
+}
+.icon-Module_Admin {
+	@include icon(Module_Admin);
+}
+.icon-Module_Advisor {
+	@include icon(Module_Advisor);
+}
+.icon-Module_Billing {
+	@include icon(Module_Billing);
+}
+.icon-Module_Locations {
+	@include icon(Module_Locations);
+}
+.icon-Module_Orders {
+	@include icon(Module_Orders);
+}
+.icon-Module_Payments {
+	@include icon(Module_Payments);
+}
+.icon-Module_Preferences {
+	@include icon(Module_Preferences);
+}
+.icon-Module_Reports {
+	@include icon(Module_Reports);
+}
+.icon-Module_Routes {
+	@include icon(Module_Routes);
+}
+.icon-Archive {
+	@include icon(Archive);
+}
+.icon-Arrow_Down {
+	@include icon(Arrow_Down);
+}
+.icon-Arrow_Up {
+	@include icon(Arrow_Up);
+}
+.icon-Bars_One {
+	@include icon(Bars_One);
+}
+.icon-Bars_Three {
+	@include icon(Bars_Three);
+}
+.icon-Bars_Two {
+	@include icon(Bars_Two);
+}
+.icon-Bed {
+	@include icon(Bed);
+}
+.icon-Briefcase {
+	@include icon(Briefcase);
+}
+.icon-Calendar {
+	@include icon(Calendar);
+}
+.icon-Chat {
+	@include icon(Chat);
+}
+.icon-Check {
+	@include icon(Check);
+}
+.icon-Chevron_Back {
+	@include icon(Chevron_Back);
+}
+.icon-Chevron_Down {
+	@include icon(Chevron_Down);
+}
+.icon-Chevron_Next {
+	@include icon(Chevron_Next);
+}
+.icon-Chevron_Up {
+	@include icon(Chevron_Up);
+}
+.icon-Circle {
+	@include icon(Circle);
+}
+.icon-Circle_Add_Solid {
+	@include icon(Circle_Add_Solid);
+}
+.icon-Circle_Check {
+	@include icon(Circle_Check);
+}
+.icon-Circle_Check_Solid {
+	@include icon(Circle_Check_Solid);
+}
+.icon-Circle_Clickable {
+	@include icon(Circle_Clickable);
+}
+.icon-Circle_Clock {
+	@include icon(Circle_Clock);
+}
+.icon-Circle_Clock_Snooze {
+	@include icon(Circle_Clock_Snooze);
+}
+.icon-Circle_Clock_Solid {
+	@include icon(Circle_Clock_Solid);
+}
+.icon-Circle_Dollar {
+	@include icon(Circle_Dollar);
+}
+.icon-Circle_Dollar_Solid {
+	@include icon(Circle_Dollar_Solid);
+}
+.icon-Circle_Info {
+	@include icon(Circle_Info);
+}
+.icon-Circle_Info_Solid {
+	@include icon(Circle_Info_Solid);
+}
+.icon-Circle_NotAvailable {
+	@include icon(Circle_NotAvailable);
+}
+.icon-Circle_NotTracking {
+	@include icon(Circle_NotTracking);
+}
+.icon-Circle_Question {
+	@include icon(Circle_Question);
+}
+.icon-Circle_Question_Solid {
+	@include icon(Circle_Question_Solid);
+}
+.icon-Circle_Rating_Happy {
+	@include icon(Circle_Rating_Happy);
+}
+.icon-Circle_Rating_Neutral {
+	@include icon(Circle_Rating_Neutral);
+}
+.icon-Circle_Rating_Sad {
+	@include icon(Circle_Rating_Sad);
+}
+.icon-Circle_Remove_Solid {
+	@include icon(Circle_Remove_Solid);
+}
+.icon-Circle_Scroll {
+	@include icon(Circle_Scroll);
+}
+.icon-Circle_Solid {
+	@include icon(Circle_Solid);
+}
+.icon-Circle_Trophy {
+	@include icon(Circle_Trophy);
+}
+.icon-Circle_Username {
+	@include icon(Circle_Username);
+}
+.icon-Circle_Warning {
+	@include icon(Circle_Warning);
+}
+.icon-Circle_Warning_Solid {
+	@include icon(Circle_Warning_Solid);
+}
+.icon-Circle_Wheel {
+	@include icon(Circle_Wheel);
+}
+.icon-Clipboard {
+	@include icon(Clipboard);
+}
+.icon-Clipboard_Check {
+	@include icon(Clipboard_Check);
+}
+.icon-Contacts {
+	@include icon(Contacts);
+}
+.icon-Contact_Mail {
+	@include icon(Contact_Mail);
+}
+.icon-Contact_Phone {
+	@include icon(Contact_Phone);
+}
+.icon-Container {
+	@include icon(Container);
+}
+.icon-Couch {
+	@include icon(Couch);
+}
+.icon-Couch_Material {
+	@include icon(Couch_Material);
+}
+.icon-Crate {
+	@include icon(Crate);
+}
+.icon-Crate_Search {
+	@include icon(Crate_Search);
+}
+.icon-CreditCard {
+	@include icon(CreditCard);
+}
+.icon-Device_Camera {
+	@include icon(Device_Camera);
+}
+.icon-Device_Laptop {
+	@include icon(Device_Laptop);
+}
+.icon-Device_Monitor {
+	@include icon(Device_Monitor);
+}
+.icon-Device_Smartphone {
+	@include icon(Device_Smartphone);
+}
+.icon-Device_TV {
+	@include icon(Device_TV);
+}
+.icon-Diamond {
+	@include icon(Diamond);
+}
+.icon-Document {
+	@include icon(Document);
+}
+.icon-Documents {
+	@include icon(Documents);
+}
+.icon-Documents_List {
+	@include icon(Documents_List);
+}
+.icon-Documents_List_Check {
+	@include icon(Documents_List_Check);
+}
+.icon-Documents_Payments {
+	@include icon(Documents_Payments);
+}
+.icon-Document_CopyScan {
+	@include icon(Document_CopyScan);
+}
+.icon-Document_CopyScan_Solid {
+	@include icon(Document_CopyScan_Solid);
+}
+.icon-Document_List {
+	@include icon(Document_List);
+}
+.icon-Document_List_Check {
+	@include icon(Document_List_Check);
+}
+.icon-Document_List_Info {
+	@include icon(Document_List_Info);
+}
+.icon-Download {
+	@include icon(Download);
+}
+.icon-Exercise {
+	@include icon(Exercise);
+}
+.icon-Eye {
+	@include icon(Eye);
+}
+.icon-Filter_Solid {
+	@include icon(Filter_Solid);
+}
+.icon-Flatbed {
+	@include icon(Flatbed);
+}
+.icon-FreezeProtect {
+	@include icon(FreezeProtect);
+}
+.icon-Gear {
+	@include icon(Gear);
+}
+.icon-Hazmat {
+	@include icon(Hazmat);
+}
+.icon-Heart {
+	@include icon(Heart);
+}
+.icon-Heart_Solid {
+	@include icon(Heart_Solid);
+}
+.icon-Hierarchy {
+	@include icon(Hierarchy);
+}
+.icon-History {
+	@include icon(History);
+}
+.icon-Home {
+	@include icon(Home);
+}
+.icon-Hourglass {
+	@include icon(Hourglass);
+}
+.icon-Info {
+	@include icon(Info);
+}
+.icon-Layers {
+	@include icon(Layers);
+}
+.icon-Lightbulb {
+	@include icon(Lightbulb);
+}
+.icon-Lightbulb_Solid {
+	@include icon(Lightbulb_Solid);
+}
+.icon-List {
+	@include icon(List);
+}
+.icon-Loading {
+	@include icon(Loading);
+}
+.icon-Location {
+	@include icon(Location);
+}
+.icon-LTL {
+	@include icon(LTL);
+}
+.icon-Machine {
+	@include icon(Machine);
+}
+.icon-Machine_Service {
+	@include icon(Machine_Service);
+}
+.icon-Map {
+	@include icon(Map);
+}
+.icon-Marker_Diamond_Solid {
+	@include icon(Marker_Diamond_Solid);
+}
+.icon-Marker_Solid {
+	@include icon(Marker_Solid);
+}
+.icon-Math_Add {
+	@include icon(Math_Add);
+}
+.icon-Math_Subtract {
+	@include icon(Math_Subtract);
+}
+.icon-Megaphone {
+	@include icon(Megaphone);
+}
+.icon-Menu_AddListItem {
+	@include icon(Menu_AddListItem);
+}
+.icon-Menu_Card {
+	@include icon(Menu_Card);
+}
+.icon-Menu_Close {
+	@include icon(Menu_Close);
+}
+.icon-Menu_Edit {
+	@include icon(Menu_Edit);
+}
+.icon-Menu_Expand {
+	@include icon(Menu_Expand);
+}
+.icon-Menu_Hamburger {
+	@include icon(Menu_Hamburger);
+}
+.icon-Menu_Logout {
+	@include icon(Menu_Logout);
+}
+.icon-Menu_Overflow {
+	@include icon(Menu_Overflow);
+}
+.icon-Menu_Reorder {
+	@include icon(Menu_Reorder);
+}
+.icon-Menu_Reply {
+	@include icon(Menu_Reply);
+}
+.icon-Menu_Sort {
+	@include icon(Menu_Sort);
+}
+.icon-Menu_Undo {
+	@include icon(Menu_Undo);
+}
+.icon-Menu_Undock {
+	@include icon(Menu_Undock);
+}
+.icon-Menu_Waffle {
+	@include icon(Menu_Waffle);
+}
+.icon-Message {
+	@include icon(Message);
+}
+.icon-Money {
+	@include icon(Money);
+}
+.icon-Navigation {
+	@include icon(Navigation);
+}
+.icon-Note {
+	@include icon(Note);
+}
+.icon-Notification {
+	@include icon(Notification);
+}
+.icon-Padlock_Locked_Solid {
+	@include icon(Padlock_Locked_Solid);
+}
+.icon-Padlock_Unlocked_Solid {
+	@include icon(Padlock_Unlocked_Solid);
+}
+.icon-Paperclip {
+	@include icon(Paperclip);
+}
+.icon-Parking {
+	@include icon(Parking);
+}
+.icon-Parking_Overnight {
+	@include icon(Parking_Overnight);
+}
+.icon-Perks {
+	@include icon(Perks);
+}
+.icon-Picture {
+	@include icon(Picture);
+}
+.icon-Pin {
+	@include icon(Pin);
+}
+.icon-Pin_Add {
+	@include icon(Pin_Add);
+}
+.icon-Placeholder {
+	@include icon(Placeholder);
+}
+.icon-Pushpin_Pinned {
+	@include icon(Pushpin_Pinned);
+}
+.icon-Pushpin_UnPinned {
+	@include icon(Pushpin_UnPinned);
+}
+.icon-Question {
+	@include icon(Question);
+}
+.icon-Refrigerated {
+	@include icon(Refrigerated);
+}
+.icon-Restroom {
+	@include icon(Restroom);
+}
+.icon-Road {
+	@include icon(Road);
+}
+.icon-Scan {
+	@include icon(Scan);
+}
+.icon-Search {
+	@include icon(Search);
+}
+.icon-Social_Facebook {
+	@include icon(Social_Facebook);
+}
+.icon-Social_Instagram {
+	@include icon(Social_Instagram);
+}
+.icon-Social_LinkedIn {
+	@include icon(Social_LinkedIn);
+}
+.icon-Social_Skype {
+	@include icon(Social_Skype);
+}
+.icon-Social_Twitter {
+	@include icon(Social_Twitter);
+}
+.icon-Social_Youtube {
+	@include icon(Social_Youtube);
+}
+.icon-Star {
+	@include icon(Star);
+}
+.icon-Star_Full {
+	@include icon(Star_Full);
+}
+.icon-Star_Half {
+	@include icon(Star_Half);
+}
+.icon-Tag {
+	@include icon(Tag);
+}
+.icon-Tag_Alert {
+	@include icon(Tag_Alert);
+}
+.icon-Tag_Half {
+	@include icon(Tag_Half);
+}
+.icon-Tag_Solid {
+	@include icon(Tag_Solid);
+}
+.icon-Tanker {
+	@include icon(Tanker);
+}
+.icon-Thermometer {
+	@include icon(Thermometer);
+}
+.icon-Thumb_Up {
+	@include icon(Thumb_Up);
+}
+.icon-Tool {
+	@include icon(Tool);
+}
+.icon-Trailer {
+	@include icon(Trailer);
+}
+.icon-Trailers {
+	@include icon(Trailers);
+}
+.icon-Trash {
+	@include icon(Trash);
+}
+.icon-Truck {
+	@include icon(Truck);
+}
+.icon-TWIC {
+	@include icon(TWIC);
+}
+.icon-Upload {
+	@include icon(Upload);
+}
+.icon-User_Group {
+	@include icon(User_Group);
+}
+.icon-User_Group_Solid {
+	@include icon(User_Group_Solid);
+}
+.icon-User_Profile {
+	@include icon(User_Profile);
+}
+.icon-User_Profile_Solid {
+	@include icon(User_Profile_Solid);
+}
+.icon-Warning {
+	@include icon(Warning);
+}
+.icon-Warning_Triangle {
+	@include icon(Warning_Triangle);
+}
+.icon-Warning_Triangle_Solid {
+	@include icon(Warning_Triangle_Solid);
+}
+.icon-Weather_Cloudy {
+	@include icon(Weather_Cloudy);
+}
+.icon-Weather_PartlyCloudy {
+	@include icon(Weather_PartlyCloudy);
+}
+.icon-Weather_Rain {
+	@include icon(Weather_Rain);
+}
+.icon-Weather_Snow {
+	@include icon(Weather_Snow);
+}
+.icon-Weather_Sunny {
+	@include icon(Weather_Sunny);
+}
+.icon-Weather_Thunderstorms {
+	@include icon(Weather_Thunderstorms);
+}
+.icon-Wide_Container {
+	@include icon(Wide_Container);
+}
+.icon-Wide_DryVan {
+	@include icon(Wide_DryVan);
+}
+.icon-Wide_Flatbed {
+	@include icon(Wide_Flatbed);
+}
+.icon-Wide_LTL {
+	@include icon(Wide_LTL);
+}
+.icon-Wide_Refrigerated {
+	@include icon(Wide_Refrigerated);
+}
+.icon-Wide_Tanker {
+	@include icon(Wide_Tanker);
+}
+.icon-Wide_Trailer {
+	@include icon(Wide_Trailer);
+}
+.icon-Wide_Trailers {
+	@include icon(Wide_Trailers);
+}
